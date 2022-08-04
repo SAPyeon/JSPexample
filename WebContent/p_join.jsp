@@ -95,9 +95,18 @@
 		
 		const submit = document.querySelector('#btn_join')
 		submit.addEventListener('click',function(e){
-			if(id.value ===''|| pw.value ===''||name.value ===''||addr.value ===''){
+			if(id.value === ''){
 				e.preventDefault();
-				alert('제대로 입력하세요');
+				alert('아이디를 제대로 입력하세요');
+			}if (pw.value=== ''){
+				e.preventDefault();
+				alert("비밀번호를 제대로 입력하세요")
+			} if(name.value === ''){
+				e.preventDefault();
+				alert("이름을 제대로 입력하세요")
+			} if(addr.value === ''){
+				e.preventDefault();
+				alert("주소를 제대로 입력하세요")
 			}
 		})
 	

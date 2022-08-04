@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+<div class = "container">
 	<form action="p_boardServer.jsp">
 		<h1>글쓰기</h1>
 		<div>
@@ -19,12 +20,12 @@
 			<button type="button" id="btn">목록으로</button>
 		</div>
 	</form>
+	</div>
 	<script>
 		const btn = document.querySelector("#btn");
 		btn.addEventListener("click", function(e) {
 			e.preventDefault();
 			location.href = "p_boardlist.jsp"
-
 		})
 	</script>
 </body>
